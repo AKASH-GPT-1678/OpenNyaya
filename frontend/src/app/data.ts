@@ -1,5 +1,5 @@
 export const CONTRACT_ABI =  [
-       
+     
         {
             "inputs": [
                 {
@@ -94,8 +94,9 @@ export const CONTRACT_ABI =  [
             "stateMutability": "nonpayable",
             "type": "function"
         }
-    
-]
+    ]
+       
+
 
 
   export enum CourtCategory {
@@ -115,8 +116,8 @@ export enum CourtType {
 export interface CourtDetails {
   name: string;
   state: string;
-  typeofCourt: CourtType;      // e.g., Civil, Criminal
-  category: CourtCategory;     // e.g., District, High
+  typeofCourt: string;      // e.g., Civil, Criminal
+  category: string;     // e.g., District, High
   adminUserName: string;
   password: string;
 }
